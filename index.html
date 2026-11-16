@@ -377,6 +377,74 @@
                 letter-spacing: -2px
             }
         }
+
+        /* EVO.AI Design Improvements */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.7;
+            letter-spacing: 0.2px;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: 0 auto;
+        }
+
+        nav {
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        button,
+        .btn,
+        a {
+            transition: all 0.25s ease;
+        }
+
+        button:hover,
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .card,
+        .service-card {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .card:hover,
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--blue);
+        }
+
+        @media (max-width: 750px) {
+            .container {
+                width: 92%;
+            }
+
+            section {
+                padding-top: 55px;
+                padding-bottom: 55px;
+            }
+
+            h1 {
+                font-size: clamp(2rem, 9vw, 3rem);
+            }
+        }
     </style>
 </head>
 

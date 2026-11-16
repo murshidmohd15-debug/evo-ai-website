@@ -107,6 +107,57 @@
             main {
                 padding: 55px 22px;
             }
+
+        }
+
+        /* EVO.AI consistent design */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.7;
+            letter-spacing: 0.2px;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: 0 auto;
+        }
+
+        nav {
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        button,
+        .btn,
+        a {
+            transition: all 0.25s ease;
+        }
+
+        button:hover,
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .card {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+        }
+
+        @media (max-width: 750px) {
+            .container {
+                width: 92%;
+            }
+
+            main {
+                padding: 55px 22px;
+            }
         }
     </style>
 </head>

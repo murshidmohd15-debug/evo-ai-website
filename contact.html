@@ -92,6 +92,56 @@
                 padding: 65px 6%;
             }
         }
+
+        /* Contact Page Design Improvement */
+        body {
+            background: #080912;
+            color: #f7f7ff;
+        }
+
+        header {
+            background: rgba(8, 9, 18, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        nav a {
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #43b8ff;
+        }
+
+        main {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 6%;
+        }
+
+        main a {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        main a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(67, 136, 255, 0.25);
+        }
+
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 6%;
+            color: #a4a7bc;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 60px 22px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
